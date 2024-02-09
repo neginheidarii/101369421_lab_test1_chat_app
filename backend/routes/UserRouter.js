@@ -66,6 +66,12 @@ userRouter.post("/login", async (req, res) => {
   }
 });
 
+// Logout route
+userRouter.post("/logout", (req, res) => {
+  // Simply respond with a success message, as you can't invalidate a stateless JWT token on the server side.
+  res.json({ message: "Logout successful" });
+});
+
 // Protected route example - require authentication using middleware
 userRouter.get("/protected", authenticateToken, (req, res) => {
   res.json({ message: "Protected route accessed successfully" });

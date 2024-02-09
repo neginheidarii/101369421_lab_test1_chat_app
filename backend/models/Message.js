@@ -1,10 +1,6 @@
 const mongoose = require("mongoose");
 
-const GroupMessageScehma = new mongoose.Schema({
-  id: {
-    type: String,
-    required: true,
-  },
+const MessageScehma = new mongoose.Schema({
   from_user: {
     type: String,
   },
@@ -21,5 +17,5 @@ const GroupMessageScehma = new mongoose.Schema({
   },
 });
 
-const GroupMessage = mongoose.model("GroupMessage", GroupMessageScehma);
-module.exports = GroupMessage;
+const Message = mongoose.model("Message", MessageScehma);
+module.exports = Message;
