@@ -1,0 +1,127 @@
+/* ChatDashboard.css */
+
+body {
+  margin: 0;
+}
+
+.chat-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  margin: 0;
+}
+
+.sidebar {
+  background-color: #0e1c2a; /* Darker blue background */
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #ecf0f1; /* Light gray text */
+}
+
+h2 {
+  color: #ecf0f1; /* Light gray heading */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.join-button {
+  background-color: #1b9fe1; /* Blue button color */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 90px;
+  margin-left: 120px;
+}
+.leave-button {
+  background-color: #950b0b; /* Blue button color */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  /* show it in the bottom */
+  position: absolute;
+  bottom: 90px;
+}
+
+.join-button:hover {
+  background-color: #19496a; /* Darker blue on hover */
+}
+
+.leave-button:hover {
+  background-color: #470606; /* Darker blue on hover */
+}
+
+.chat-area {
+  flex: 1;
+  padding: 20px;
+  background-color: #ecf0f1; /* Light gray background */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.own-message {
+  background-color: #27c76a; /* Green message background */
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.other-message {
+  background-color: #ecf0f1; /* Light gray message background */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.message-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 120px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.send-button {
+  background-color: #0e1c2a; /* Green button color */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 90px;
+}
+
+.send-button:hover {
+  background-color: rgb(18, 64, 130);
+}
